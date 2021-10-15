@@ -10,10 +10,7 @@ export class ProductService {
 
   getAlbum(id: number) {
     console.log(this._albumUrl)
-    return this._http.get(this._albumUrl).pipe(
-      map((response) => {
-        return response.json()
-      })
+    return this._http.get(this._albumUrl).pipe( map((response) => response.json())
     );
   }
 
